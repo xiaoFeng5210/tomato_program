@@ -22,7 +22,7 @@
   </view>
   <view class=' {{ tab == "1" ? "active afterTabs" : "afterTabs"  }}' ></view>
   <view class='lists-wrapper'>
-  <swiper bindchange="swiperChange" class='swiper-wrapper' current="{{tab}}">
+  <swiper bindchange="swiperChange" class='swiper-wrapper' current="{{tab}}" bindtransition="transitionChange">
     <swiper-item >
       <scroll-view scroll-y="true" class="lists" >
         <view  class="item" wx:for="{{tomatoes}}"  wx:for-index="key" wx:key="index">

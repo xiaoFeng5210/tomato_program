@@ -40,6 +40,7 @@ Page({
           this.hideConfirm()
       })
     }
+  
   }, 
   updateTodos(event){//更新
     let { id, index } = event.currentTarget.dataset

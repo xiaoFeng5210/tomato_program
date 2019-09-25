@@ -17,16 +17,19 @@ Component({
     _value: ""
   }, 
   methods: {
-    watchValue(event) {
-      this.data._value = event.detail.value
-    },
     confirm() {
+      console.log('传入', this.data._value)
       this.triggerEvent('confirm', this.data._value)
       this.data._value = ''
     },
     cancel() {
+      console.log('传入', this.data._value)
       this.triggerEvent('cancel', this.data._value)
       this.data._value = ''
+    },
+    watchValue(event) {
+      this.data._value = event.detail.value  
+      
     }
   }
 })
